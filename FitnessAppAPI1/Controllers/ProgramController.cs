@@ -12,7 +12,6 @@ namespace FitnessAppAPI1.Controllers
     {
         ProgramFac pf = new ProgramFac();
 
-
         [HttpGet]
         [Route("api/Program/GetAll/{userid}")]
         public IEnumerable<Program> GetAll(int userid)
@@ -32,9 +31,10 @@ namespace FitnessAppAPI1.Controllers
         [Route("api/Program/GetFullProgram/{id}")]
         public FullProgram GetFullProgram(int id)
         {
-
             return pf.GetFullProgram(id);
         }
+
+
 
     }
 }
